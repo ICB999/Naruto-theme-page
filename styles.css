@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'naruto';
+    src: url('./resources/font/njnaruto-webfont.woff2') format('woff2'), url('./resources/font/njnaruto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'naruto', sans-serif;
+}

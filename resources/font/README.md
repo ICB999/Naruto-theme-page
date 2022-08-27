@@ -1,0 +1,1 @@
+This fond can be downloaded on https://www.dafont.com/ninja-naruto.font
