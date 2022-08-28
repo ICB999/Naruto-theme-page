@@ -6,15 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naruto Page</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <!-- Nav -->
-    <div class="nav">
+    <section class="nav">
         <div class="nav-container">
+            <div class="logo">
+                <img src="./resources/img/naruto-icon.png" alt="">
+                <div class="name">
+                    <p>Uzumaki</p>
+                    <p>Naruto</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">play</a>
+                </li>
+                <li>
+                    <a href="#">audio</a>
+                </li>
+                <li>
+                    <div class="audio-btn"><img class="icon" src="./resources/img/icons8-pause-30.png" alt=""></div>
+                    <audio class="audio" autoplay loop muted>
+                        <source src="./resources/music/Calm Before The Storm.mp3" type="audio/mp3">
+                    </audio>
+                </li>
+            </ul>
         </div>
-    </div>
+    </section>
+    <!-- hero section -->
+    <section class="hero">
+
+        <div class="hero-container">
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>
