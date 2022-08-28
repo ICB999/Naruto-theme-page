@@ -25,27 +25,41 @@
             </div>
             <ul class="nav-menu">
                 <li>
-                    <a href="#">play</a>
+                    <a href="#" class="play-pause">play</a>
                 </li>
                 <li>
                     <a href="#">audio</a>
                 </li>
                 <li>
-                    <div class="audio-btn"><img class="icon" src="./resources/img/icons8-pause-30.png" alt=""></div>
-                    <audio class="audio" autoplay loop muted>
-                        <source src="./resources/music/Calm Before The Storm.mp3" type="audio/mp3">
-                    </audio>
+                    <div class="audio-btn"><img class="icon" src="./resources/img/icons8-play-30.png" alt=""></div>
+                    <audio class="audio" autoplay="true" loop>
+                    <source src="./resources/music/Calm Before The Storm.mp3" type="audio/mp3">
+                </audio>
                 </li>
             </ul>
         </div>
     </section>
-    <!-- hero section -->
-    <section class="hero">
-
+    <div class="main-container">
+        <video autoplay loop muted class="background-vid">
+            <source src="./resources/video/naruto-hokage-anime-live-wallpaper.mp4" type="video/mp4">
+        </video>
+        <!-- hero section -->
         <div class="hero-container">
-
+            <div class="left">
+                <h2>The hokage of the hidden leaf</h2>
+                <p>The most legendary and strongest hokage of them all is none other than Uzumaki Naruto. Naruto help ended the 4th shinobi war, he was the child of prophecy and was the first ninja to achieve world peace.</p>
+                <button class="become-ninja">Become a ninja!</button>
+            </div>
+            <div class="right">
+                <h2>"epic entrance"</h2>
+                <video autoplay loop muted>
+                    <source src="./resources/video/sage-naruto.mp4">
+                </video>
+                <a href="https://www.youtube.com/watch?v=06EjEq_7RJY&t=2s">Naruto Shippuden - Opening 7 | A World That Was Transparent</a>
+            </div>
         </div>
-    </section>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 :root {
     --main-yellow: #f5af19;
     --main-orange: #f12711;
@@ -21,13 +23,13 @@ html {
     font-size: 16px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     html {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     html {
         font-size: 12px;
     }
@@ -50,15 +52,13 @@ section {
 /* Nav */
 
 .nav {
+    z-index: 10;
     position: fixed;
     width: 100%;
     padding: .25rem 2rem;
     background: #f12711;
-    /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #f5af19, #f12711);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     .nav-container {
         display: flex;
         align-items: center;
@@ -85,16 +85,17 @@ section {
             }
         }
         .audio-btn {
+            cursor: pointer;
             position: relative;
             top: -2px;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: var(--main-yellow);
             height: 28px;
             width: 28px;
             border-radius: 8px;
             border: #000 3px solid;
+            background-color: var(--main-yellow);
             img {
                 width: 20px;
                 height: 20px;
@@ -105,3 +106,114 @@ section {
 
 
 /* hero section */
+
+.main-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background-vid {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.hero-container {
+    position: absolute;
+    gap: 1rem;
+    width: 70%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+    background: linear-gradient(to right, #f5af19, #f12711);
+    border: #000 10px solid;
+    border-radius: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .left {
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        h2 {
+            text-align: center;
+        }
+        p {
+            font-family: 'Acme', sans-serif;
+            font-size: 1.1rem;
+        }
+        .become-ninja {
+            padding: .25rem .5rem;
+            border: 0;
+            border-radius: 16px;
+            border: #000 3px solid;
+            background-color: var(--main-yellow);
+            cursor: pointer;
+            transition: all .3s;
+            &:hover {
+                background-color: var(--main-orange);
+                transition: all .3s;
+            }
+        }
+    }
+    .right {
+        flex: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        video {
+            margin-top: 1rem;
+            height: 100%;
+            width: 100%;
+        }
+        a {
+            margin-top: 1rem;
+            text-decoration: underline;
+            text-align: center;
+            font-family: "Acme", sans-serif;
+            &:hover {
+                color: var(--main-yellow);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero-container {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        padding: 2rem 2rem;
+        flex-direction: column-reverse;
+        gap: 3rem;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        width: 300px;
+    }
+}
