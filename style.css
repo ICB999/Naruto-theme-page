@@ -293,4 +293,43 @@ section {
     width: 300px;
   }
 }
+
+.friend-section {
+  padding: 0 0;
+  padding-top: 821px;
+}
+
+.friend-section .container {
+  padding: 0 2rem;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
+  background: linear-gradient(to right, #f5af19, #f12711);
+}
+
+.friend-section .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.friend-section .container ul li a img {
+  width: 100px;
+  height: 100px;
+}
 /*# sourceMappingURL=style.css.map */

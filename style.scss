@@ -217,3 +217,32 @@ section {
         width: 300px;
     }
 }
+
+// friend section
+.friend-section {
+    padding: 0 0;
+    padding-top: 821px;
+    .container {
+        padding: 0 2rem;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+        background: linear-gradient(to right, #f5af19, #f12711);
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            li {
+                a {
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
