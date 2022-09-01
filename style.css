@@ -58,6 +58,8 @@ section {
   background: #f12711;
   background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
   background: linear-gradient(to right, #f5af19, #f12711);
+  border-top: #000 3px solid;
+  border-bottom: #000 3px solid;
 }
 
 .nav .nav-container {
@@ -296,7 +298,9 @@ section {
 
 .friend-section {
   padding: 0 0;
-  padding-top: 821px;
+  position: absolute;
+  bottom: -9rem;
+  width: 100%;
 }
 
 .friend-section .container {
@@ -313,6 +317,8 @@ section {
           align-items: center;
   background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
   background: linear-gradient(to right, #f5af19, #f12711);
+  border-top: #000 3px solid;
+  border-bottom: #000 3px solid;
 }
 
 .friend-section .container ul {
