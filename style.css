@@ -6,18 +6,16 @@
 }
 
 @font-face {
-  font-family: 'naruto';
+  font-family: "naruto";
   src: url("./resources/font/njnaruto-webfont.woff2") format("woff2"), url("./resources/font/njnaruto-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'naruto', sans-serif;
+  box-sizing: border-box;
+  font-family: "naruto", sans-serif;
 }
 
 html {
@@ -29,13 +27,11 @@ html {
     font-size: 14px;
   }
 }
-
 @media screen and (max-width: 600px) {
   html {
     font-size: 12px;
   }
 }
-
 li {
   list-style: none;
 }
@@ -54,84 +50,51 @@ section {
   z-index: 10;
   position: fixed;
   width: 100%;
-  padding: .25rem 2rem;
+  padding: 0.25rem 2rem;
   background: #f12711;
-  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
   background: linear-gradient(to right, #f5af19, #f12711);
   border-top: #000 3px solid;
   border-bottom: #000 3px solid;
 }
-
 .nav .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
-
 .nav .nav-container .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 }
-
 .nav .nav-container .logo img {
   width: 45px;
   height: 45px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
   filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
 }
-
 .nav .nav-container .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .nav .nav-container .nav-menu li {
   margin: 3px;
 }
-
 .nav .nav-container .audio-btn {
   cursor: pointer;
   position: relative;
   top: -2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 28px;
   width: 28px;
   border-radius: 8px;
   border: #000 3px solid;
   background-color: var(--main-yellow);
 }
-
 .nav .nav-container .audio-btn img {
   width: 20px;
   height: 20px;
@@ -155,8 +118,7 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 
@@ -165,104 +127,62 @@ section {
   gap: 1rem;
   width: 70%;
   padding: 2rem 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: #f12711;
-  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
   background: linear-gradient(to right, #f5af19, #f12711);
-  border: #000 10px solid;
-  border-radius: 24px;
+  border: #000 6px solid;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 .hero-container .left {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 50%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
-
 .hero-container .left h2 {
   text-align: center;
 }
-
 .hero-container .left p {
-  font-family: 'Acme', sans-serif;
+  font-family: "Acme", sans-serif;
   font-size: 1.1rem;
 }
-
 .hero-container .left .become-ninja {
-  padding: .25rem .5rem;
+  padding: 0.25rem 0.5rem;
   border: 0;
   border-radius: 16px;
   border: #000 3px solid;
   background-color: var(--main-yellow);
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 .hero-container .left .become-ninja:hover {
   background-color: var(--main-orange);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
-
 .hero-container .right {
-  -webkit-box-flex: 50%;
-      -ms-flex: 50%;
-          flex: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex: 50%;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .hero-container .right video {
   margin-top: 1rem;
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
 }
-
 .hero-container .right a {
   margin-top: 1rem;
   text-decoration: underline;
   text-align: center;
   font-family: "Acme", sans-serif;
 }
-
 .hero-container .right a:hover {
   color: var(--main-yellow);
 }
@@ -272,70 +192,141 @@ section {
     width: 700px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .hero-container {
     padding: 2rem 2rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     gap: 3rem;
     width: 500px;
   }
 }
-
 @media screen and (max-width: 560px) {
   .hero-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
     gap: 3rem;
     width: 300px;
   }
 }
-
 .friend-section {
   padding: 0 0;
   position: absolute;
-  bottom: -9rem;
+  bottom: -8.8rem;
   width: 100%;
 }
-
 .friend-section .container {
   padding: 0 2rem;
-  height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 180px;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#f12711));
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+  flex-direction: column;
   background: linear-gradient(to right, #f5af19, #f12711);
   border-top: #000 3px solid;
   border-bottom: #000 3px solid;
 }
-
+.friend-section .container h3 {
+  padding-bottom: 1.5rem;
+}
 .friend-section .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
 }
-
-.friend-section .container ul li a img {
-  width: 100px;
-  height: 100px;
+.friend-section .container ul li p {
+  text-align: center;
+  margin-top: 0.8rem;
+  padding-bottom: 0;
 }
-/*# sourceMappingURL=style.css.map */
+.friend-section .container ul li .name {
+  font-family: "Acme", sans-serif;
+}
+.friend-section .container ul li a img {
+  border: 1px #000 solid;
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .friend-section {
+    bottom: -22rem;
+  }
+  .friend-section .container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem 0;
+  }
+  .friend-section .container ul {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.quotes {
+  position: absolute;
+  bottom: -22.3rem;
+  background: url(./resources/img/naruto-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quotes .container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  position: relative;
+}
+.quotes .container p {
+  width: 100%;
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3019607843);
+  padding: 1rem 2rem;
+  position: relative;
+}
+.quotes .container p:nth-child(1) {
+  border: 2px solid #fff;
+  border-bottom: none;
+}
+.quotes .container p:nth-child(2) {
+  text-align: right;
+  border: 2px solid #fff;
+  border-top: none;
+  font-family: "Acme", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .quotes {
+    bottom: -26.2rem;
+  }
+  .quotes .container {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .quotes {
+    bottom: -39.45rem;
+  }
+  .quotes .container {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .quotes {
+    bottom: -37.4rem;
+  }
+  .quotes .container {
+    width: 240px;
+  }
+  .quotes .container p {
+    padding: 0.5rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
