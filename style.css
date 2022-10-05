@@ -329,4 +329,112 @@ section {
   .quotes .container p {
     padding: 0.5rem 1rem;
   }
+}
+.signup {
+  background: #000;
+  position: absolute;
+  bottom: -41rem;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f12711;
+  background: linear-gradient(to right, #f5af19, #f12711);
+  padding: 1rem 2rem;
+}
+.signup .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  height: 100%;
+  border: 2px solid black;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.signup .left {
+  color: #000;
+}
+.signup .left p {
+  font-size: 0.6rem;
+  color: rgb(101, 89, 89);
+}
+.signup .right a {
+  color: #000;
+  text-decoration: none;
+  background-color: #f5af19;
+  padding: 0.25rem 0.5rem;
+  border-radius: 16px;
+  border: 2px solid black;
+  font-size: 0.8rem;
+  transition: 0.3s all;
+}
+.signup .right a:hover {
+  background-color: #f12711;
+  transition: 0.3s all;
+}
+
+@media screen and (max-width: 1000px) {
+  .signup {
+    bottom: -43.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .signup {
+    bottom: -51.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .signup {
+    bottom: -64.45rem;
+  }
+  .signup .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 300px) {
+  .signup {
+    bottom: -62.4rem;
+  }
+}
+.copyright {
+  position: absolute;
+  bottom: -44rem;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+}
+.copyright p {
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .copyright {
+    bottom: -46.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .copyright {
+    bottom: -54.1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .copyright {
+    bottom: -67.4rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .copyright {
+    bottom: -65.3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
